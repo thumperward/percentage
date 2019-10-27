@@ -19,5 +19,5 @@ jobs:
       - name: Artifact upload
         uses: actions/upload-artifact@master
         with:
-          name: percentage.zip
+          name: percentage
           path: percentage\percentage\bin\Release\percentage.exe
