@@ -61,7 +61,6 @@ namespace percentage
             bool pluggedIn = (powerLineStatus == PowerLineStatus.Online);
 
             batteryPercentage = (powerStatus.BatteryLifePercent * 100).ToString();
-            bool charging = SystemInformation.PowerStatus.BatteryChargeStatus.HasFlag(BatteryChargeStatus.Charging);
 
             Color fontColor;
             if (charging)
@@ -74,7 +73,6 @@ namespace percentage
 
             }
 
-            Color fontColor = Color.White;
             if (!noBattery)
             {
                 if (charging || (pluggedIn && fullyCharged))
@@ -87,7 +85,7 @@ namespace percentage
                 }
             }
 
-            using (Bitmap bitmap = new Bitmap(DrawText(batteryPercentage, new Font(iconFont, iconFontSize), fontColor, Color.Black)))
+            using (Bitmap bitmap = new Bitmap(DrawText(batteryPercentage, new Font(iconFont, iconFontSize), fontColor, Color.Transparent)))
             {
                 System.IntPtr intPtr = bitmap.GetHicon();
                 try
