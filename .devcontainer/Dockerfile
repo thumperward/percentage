@@ -20,7 +20,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
     ssh \
     git \
-    sudo \
     bash
 
 # [Optional] Uncomment this line to install global node packages.
