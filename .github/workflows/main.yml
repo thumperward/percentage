@@ -24,7 +24,7 @@ jobs:
       image: mono
     steps:
       - name: Prerequisites
-        run: sudo apt install -y ssh git bash
+        run: apt install -y ssh git bash
       - name: Checkout
         uses: actions/checkout@master
       - name: MSBuild
