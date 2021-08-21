@@ -19,6 +19,7 @@ jobs:
       #     name: percentage
       #     path: percentage\percentage\bin\Release\percentage.exe
   linux-build:
+    runs-on: ubuntu-latest
     container:
       image: mono
     steps:
