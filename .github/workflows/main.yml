@@ -24,12 +24,12 @@ jobs:
       image: mono
     steps:
       - name: Prerequisites
-        run: apt update && apt install -y ssh git bash
+        run: apt update && apt install -y --no-install-recommends ssh git bash
       - name: Checkout
         uses: actions/checkout@master
       - name: MSBuild
         working-directory: percentage
-        run: msbuild percentage/percentage.sln -p:Configuration=Release
+        run: msbuild percentage.sln -p:Configuration=Release
       # - name: Artifact upload
       #   uses: actions/upload-artifact@master
       #   with:
