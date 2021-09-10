@@ -18,8 +18,8 @@ Original project by [kas](https://github.com/kas/percentage).
 
 This project was compiled with Visual Studio Professional 2015.
 
-To compile using a Windows Docker image with this pre-installed, first install 
-Docker Desktop and configure it to run Windows containers, then change to the 
+To compile using a Windows Docker image with this pre-installed, first install
+Docker Desktop and configure it to run Windows containers, then change to the
 root directory of the repository and run the following:
 
 ```powershell
