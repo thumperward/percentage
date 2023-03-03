@@ -1,8 +1,8 @@
 FROM mono
 
 # Install additional OS packages
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends \
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get -y install --no-install-recommends \
     ssh \
     git \
     sudo

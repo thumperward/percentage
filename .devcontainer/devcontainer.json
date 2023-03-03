@@ -7,7 +7,9 @@
 		"vscode": {
 			"extensions": [
 				"ms-dotnettools.csharp",
-				"redhat.vscode-yaml"
+				"redhat.vscode-yaml",
+				"ms-azuretools.vscode-docker",
+				"logerfo.sln-support"
 			]
 		}
 	},
