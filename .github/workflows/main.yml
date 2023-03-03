@@ -23,8 +23,8 @@ jobs:
     container:
       image: mono
     steps:
-      - name: Prerequisites
-        run: apt update && apt install -y --no-install-recommends ssh git
+      # - name: Prerequisites
+      #   run: apt update && apt install -y --no-install-recommends ssh git
       - name: Checkout
         uses: actions/checkout@master
       - name: MSBuild
